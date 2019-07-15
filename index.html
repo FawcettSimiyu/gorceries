@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Groceries</title>
+  </head>
+  <body>
+    <script>
+      function groceries(){
+        this.grocery = prompt("Please Enter Name of Grocery List");
+        this[this.grocery]=[];
+        this.groceryLength = prompt ("How many Items do you need please");
+        for (var i=0;i<groceryLength;i++){
+          this[this.grocery].push(prompt("Please enter name of grocery"));
+        }
+        return this[this.grocery];
+      }
+      alert (groceries().join("\n"));
+    </script>
+
+  </body>
+</html>
